@@ -29,6 +29,13 @@ ul {
   padding: 0px;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  outline: 2px solid aqua;
+}
+
 /* logo */
 .logo {
   font-family: 'Raleway', sans-serif;
