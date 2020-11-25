@@ -33,7 +33,12 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 1170px;
-  outline: 2px solid aqua;
+  /* outline: 2px solid aqua; */
+}
+
+/* page-header */
+.page-header {
+  background-color: var(--body-color);
 }
 
 /* logo */
@@ -103,6 +108,8 @@ ul {
 }
 
 .hero-title {
+  margin-top: 0%;
+  margin-bottom: 0%;
   color: var(--body-color);
   font-weight: 900;
   font-size: 44px;
@@ -115,6 +122,8 @@ ul {
 
 /* Button */
 .button-primary {
+  min-width: 200px;
+  /* height: 50px; */
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -126,12 +135,17 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
 }
 
 .button-primary:hover,
 .button-primary:focus {
   background-color: var(--body-color);
   color: var(--title-text-color);
+  /* border-color: var(--accent-color); */
 }
 
 /* Section */
