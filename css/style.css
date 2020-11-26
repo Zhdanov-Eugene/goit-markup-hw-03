@@ -54,8 +54,16 @@ address {
   background-color: var(--body-color);
 }
 
+/* main-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* logo */
 .logo {
+  display: flex;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -81,7 +89,28 @@ address {
 }
 
 /*  site-nav */
+.site-nav {
+  display: flex;
+}
+
+/* .site-nav .item {
+ margin-right: 50px;
+  background-color: green;
+} */
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+/* .site-nav .item:last-child {
+  margin-right: 0px;
+} */
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -100,11 +129,22 @@ address {
 
 /* address-header */
 .address-header {
+  /* margin-top: 0px;
+  margin-bottom: 0px; */
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-block;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.address-header + .address-header {
+  margin-left: 50px;
 }
 
 .address-header:hover,
